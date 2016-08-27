@@ -32,7 +32,7 @@ summarized <- summarise(grouped, steps = sum(steps))
 hist(summarized$steps, xlab = "Steps", main = "Histogram of Daily Steps Taken")
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png)
+![plot of chunk unnamed-chunk-4](/unnamed-chunk-4-1.png)
 
 ##What is mean & median total steps per day?
 
@@ -67,7 +67,7 @@ intervalSummarized <- summarize(intervalGroup, Mean_Steps = mean(steps))
 plot(intervalSummarized, type = "l", main = "Mean Steps by Interval")
 ```
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-6](/unnamed-chunk-6-1.png)
 
 ```r
 Interval <- max(intervalSummarized$Mean_Steps)
@@ -111,7 +111,7 @@ summarizedNew <- summarise(groupedNew, steps = sum(steps))
 hist(summarizedNew$steps, xlab = "Steps", main = "Histogram of Daily Steps Taken")
 ```
 
-![plot of chunk unnamed-chunk-9](figure/unnamed-chunk-9-1.png)
+![plot of chunk unnamed-chunk-9](/unnamed-chunk-9-1.png)
 ##Calculate new mean and median and difference between new meand and medians compared to original's
 
 ```r
@@ -176,5 +176,5 @@ plot(weekendData, type = "l", main = "Mean Steps Taken on Weekends")
 plot(weekdayData, type = "l", main = "Mean Steps Taken on Weekdays")
 ```
 
-![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12-1.png)
+![plot of chunk unnamed-chunk-12](/unnamed-chunk-12-1.png)
 
